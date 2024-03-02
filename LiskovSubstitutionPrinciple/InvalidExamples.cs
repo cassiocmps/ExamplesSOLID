@@ -3,11 +3,11 @@
 // Liskov substituition principle dictates that a sub class should be a substituted by its super class.
 // Here we have some examples of bad practices when using inheritance that violates this principle.
 
-
 // IEmploymentContract interface dictates that any format of employment should have a compensation.
 // But a volunteer receives nothing from the company, so to implement that interface it has to make no operations.
 // Volunteer should not implement it, in a case where theres another methods to be implemented,
 // perphaps chaining the interfaces could be a possible solution
+// This case also violates the next concept, Interface Segregation Principle
 interface IEmploymentContract
 {
     public void CalculateCompensation();
